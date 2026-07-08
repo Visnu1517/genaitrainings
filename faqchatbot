@@ -1,0 +1,19 @@
+class ChatBot:
+  def __init__(self):
+    self.faq = {
+      "what is your name?": "Chatbot",
+      "how are you?": "I'm just a program, but I'm doing fine!",
+      "what can you do?": "I can answer questions from my FAQ knowledge base.",
+      "who created you?": "I was created as a Python assignment.",
+      "bye": "Goodbye! Have a great day.",
+    }
+    
+  def _normalize(self, text):
+    return text.strip().lower().rstrip("?.!")
+    
+  def get_answer(self, query):
+    cleaned_query = self._normalize(query)
+    for question, answer in self.faq.items():
+    if self._normalize(question) == cleaned_query:
+      return answer
+    return "Sorry, can't answer that yet."
