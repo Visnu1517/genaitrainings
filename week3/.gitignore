@@ -1,0 +1,12 @@
+# Secrets - never commit your API key
+.env
+
+# Generated vector stores (rebuilt automatically on first run)
+data/
+data_test/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
