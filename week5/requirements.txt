@@ -1,0 +1,8 @@
+# LLM client (required)
+anthropic>=0.40
+
+# Validates the planner's and reasoner's structured output
+pydantic>=2.0
+
+# Loads the .env file automatically
+python-dotenv>=1.0
