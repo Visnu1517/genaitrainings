@@ -1,0 +1,10 @@
+{
+  "_comment": "Optional. Add this to Claude Desktop's config to use these same tools there. Replace both paths with your own. Find the config at: Windows %APPDATA%\\Claude\\claude_desktop_config.json | macOS ~/Library/Application Support/Claude/claude_desktop_config.json",
+  "mcpServers": {
+    "att-tools": {
+      "command": "C:\\path\\to\\week6\\.venv\\Scripts\\python.exe",
+      "args": ["-m", "mcp_server.server"],
+      "cwd": "C:\\path\\to\\week6"
+    }
+  }
+}
